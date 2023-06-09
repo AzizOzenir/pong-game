@@ -1,0 +1,84 @@
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.theme-button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/* Light theme */
+body.light-theme {
+    background-color: #fff;
+    color: #000;
+}
+
+body.light-theme .theme-button {
+    background-color: #fff;
+    color: #000;
+}
+
+body.light-theme #ball,
+body.light-theme .paddle {
+    background-color: #000;
+}
+
+/* Dark theme */
+body.dark-theme {
+    background-color: #000;
+    color: #fff;
+}
+
+body.dark-theme .theme-button {
+    background-color: #fff;
+    color: #000;
+}
+
+body.dark-theme #ball,
+body.dark-theme .paddle {
+    background-color: #fff;
+}
+
+#game-container {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    border: 2px solid #616161;
+}
+
+.paddle {
+    position: absolute;
+    width: 10px;
+    height: 60px;
+    background-color: #000;
+}
+
+#paddle-left {
+    left: 0;
+    border-radius: 0px 5px 5px 0px;
+}
+
+#paddle-right {
+    right: 0;
+    border-radius: 5px 0px 0px 5px;
+}
+
+#ball {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+#scoreboard {
+    text-align: center;
+    margin-top: 20px;
+}
